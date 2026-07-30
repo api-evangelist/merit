@@ -1,4 +1,16 @@
 aid: merit
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/merit.png
 name: Merit
 description: Merit is a company surfaced as a portfolio company of a16z and added to the API Evangelist
   network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
@@ -11,7 +23,22 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
+x-enrichment:
+  date: '2026-07-20'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
+x-enrichment-note: >-
+  Enrichment probe found no live, documented public API surface for this a16z
+  portfolio "Merit" (verified digital identity / credentials company). Primary
+  domain www.merits.com now 301-redirects to an unrelated site (aspiretech.us);
+  merits.com and developer.merits.com return TLS connection resets over residual
+  GKE/Anthos ingress; api.merits.com serves only a raw Kubernetes API 403
+  (system:anonymous), not a product API. getmerit.com is parked/for-sale
+  (GoDaddy); merit.com is the unrelated Merit Medical Systems. The a16z
+  portfolio record flags this company is_api_provider:false with no domain. No
+  artifacts could be honestly created; company appears defunct/abandoned.
 tags:
 - Company
 apis: []
